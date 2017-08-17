@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Rafaela Silveira
+ * Date: August, 17, 2017
+ * StudentID: 300910503  
+ * Description: PickHighestCard project - Final Test 
+ * Version: 0.1 - implemented scoreboard class
  */
 
 namespace COMP123_S2017_FinalExam_300910503
@@ -29,9 +29,25 @@ namespace COMP123_S2017_FinalExam_300910503
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        private int _scoreboard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public List<PictureBox> DealtCardPictureBoxList
+        public int ScoreBoard
+        {
+            get
+                {
+                    return this._scoreboard;
+                }
+
+            set
+                {
+                    this._scoreboard = value;
+                }
+         }
+
+
+
+    public List<PictureBox> DealtCardPictureBoxList
         {
             get
             {
